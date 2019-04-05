@@ -1,0 +1,146 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+body {
+    padding: 0;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #D3D3D3;
+    display: inline-block;
+  } 
+
+
+#bodyspace {
+  margin: 20px;
+  margin-top: 20px 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    border-top: solid 3px green;
+
+  }
+  .data_table{
+      background: white;
+  }
+  .body_compare{
+    background: white;
+    padding-left: 20px;
+    padding-top:10px;
+  }
+
+  .card-title {
+      color: green;
+      
+  }
+ .title_width {
+    max-width: 1300px;
+ }
+  .font_increase {
+    font-size: 50px;
+}
+    .small_padding{
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+  .title_padding {
+      padding: 20px;
+      padding-bottom: 1px;
+  }
+
+  /* .small_padding {
+    padding: 10px;
+} */
+
+  .compare_center{
+    text-align: center;
+    font-size: 25px;
+    color: green
+  }
+  .card_border {
+      background: white;
+  }
+/*
+header {
+  background: #333;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #16f774;
+  text-align: left;
+}
+
+#big-font {
+    font-size: 40px;
+
+  }
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #d21034;
+}
+
+/* Selecting elements by class */
+/* .container {
+  width: 1024px;
+  margin: 0 auto;
+} */
+
+/* Selecting elements by ID */
+/* #main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#bio-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+}
+
+#land-image {
+  width: 200px;
+  height: 175px;
+  margin-right: -100px;
+  float: left;
+}
+div {
+    clear: left;
+  }
+
+navbar li {
+    display: inline=block;
+
+} */ 

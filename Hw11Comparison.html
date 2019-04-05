@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="styling.css">
+    </head>
+
+
+    <style>
+    .navbar{
+      padding: 10px;
+      background: #ffffff;
+      max-width: 1300px;
+    }
+    </style>
+   
+
+    <!-- 1. Navigation Section -->
+    <nav class="navbar">
+    
+            <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+                    <div class="col mt-1"> 
+                            <button type="button" class="btn btn-success" onclick="window.location='./Hw11.html'">Latitude</button>
+                    </div>
+                <!-- <button type="button" class="btn btn-secondary">Latitude</button> -->
+            </div>
+            
+            <!-- <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                    <label class="btn btn"> -->
+                    <!-- <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots  -->
+                        <div class="btn-group btn-group-sm">
+                                <!-- <button type="button" class="btn btn-light">Plots</button> -->
+                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  Plots
+                                </button>
+                                <div class="dropdown-menu">
+                                    
+                                        <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11Plots.html">Max Temperature</a>
+                                        <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsHumid.html">Humidity</a>
+                                        <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsCloud.html">Cloudiness</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsWind.html">Wind Speed</a>
+                                      </div>
+                        
+                <!-- <button type="button" class="btn btn-light">Plots</button> -->
+                                <button type="button" class="btn btn-light" onclick="window.location='./Hw11Comparison.html'">Comparison</button>
+                                <!-- <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    Comparison
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11.html#/comparevisuals">Compare Visuals</a>
+                                </div>   -->
+                                <button type="button" class="btn btn-light" onclick="window.location='./Hw11Data.html'">Data</button>
+                                <!-- <button type="button" class="btn btn-light">Data</button> -->
+                            <!-- <button class="btn" style="text-align:inherit" onclick="window.location='./Learn/'">&laquo; About HerdMASTER 4</button> -->
+                        <!-- </button> -->
+                        </div>  
+                <!-- </label> -->
+            <!-- </div> -->
+           
+        </nav>
+        <br>
+<body>
+    
+
+<div class = "card title_width">
+        <div class="container">
+                <!-- style="border:1px solid #cecece;" -->
+                <h3 class="card-title"><strong>Comparison: Latitude vs X</strong></h3>
+                <h6><p class="card-text"><small class="text-muted">Click any plot to get an indepth analysis.</small></p></h6>
+        </div>
+</div>
+
+<div class="container title_width">
+        
+        <!-- <h3 class="text-left">.........Vs. Max Temperature....................................Vs. Humidity</h3> -->
+          <div class="row">
+              <div class="col-md-6 compare_center">
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11Plots.html" class="card-link card-title"> Vs. Max Temperature<img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img" alt="MaxTemp"> </a>
+                  <!-- <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11.html#/plots/maxtemp">Vs. Max Temperature</a>
+                  <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" alt="Max Temperature" class="img-thumbnail"> -->
+                
+                
+              </div>
+              <div class="col-md-6 compare_center">
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsHumid.html" class="card-link card-title"> Vs. Humidity<img src="02-Homeworks_11-Web_Resources_assets_images_Fig2.png" class="card-img" alt="Humid"> </a>
+                  
+              </div>
+          </div>
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+        <!-- <h3 class="text-left">................Vs. Cloudiness......................................Vs. Wind Speed</h3> -->
+          <div class="row">
+              <div class="col-md-6 compare_center">
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsCloud.html" class="card-link card-title"> Vs. Cloudiness<img src="02-Homeworks_11-Web_Resources_assets_images_Fig3.png" class="card-img" alt="Cloud"> </a>
+                
+                
+              </div>
+              <div class="col-md-6 compare_center">
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsWind.html" class="card-link card-title"> Vs. Wind Speed<img src="02-Homeworks_11-Web_Resources_assets_images_Fig4.png" class="card-img" alt="Landing Page"> </a>
+                  
+            </div>
+          </div>
+<!-- </div> -->
+</div>
+
+</body>
+    <div class="footer">
+        <p>Coypright Coding Bootcamp 2017</p>
+    </div>
+</html>

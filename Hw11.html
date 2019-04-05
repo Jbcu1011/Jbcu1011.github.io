@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="styling.css">
+    </head>
+
+
+    <style>
+    .navbar{
+      padding: 10px;
+      background: #ffffff;
+    }
+    </style>
+    </head>
+
+    <!-- 1. Navigation Section -->
+    <nav class="navbar">
+    
+        <div class="btn-group btn-group-lg" role="group" aria-label="First group">
+                <div class="col mt-1"> 
+            <!-- <button type="button" class="btn btn-success">Latitude</button> -->
+            <button type="button" class="btn btn-success" onclick="window.location='./Hw11.html'">Latitude</button>
+        </div>
+            <!-- <button type="button" class="btn btn-secondary">Latitude</button> -->
+        </div>
+        
+        <!-- <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+                <label class="btn btn"> -->
+                <!-- <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots  -->
+                    <div class="btn-group btn-group-sm">
+                            <!-- <button type="button" class="btn btn-light">Plots</button> -->
+                            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                              Plots
+                            </button>
+                            <div class="dropdown-menu">
+                                    
+                              <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11Plots.html">Max Temperature</a>
+                              <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsHumid.html">Humidity</a>
+                              <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsCloud.html">Cloudiness</a>
+                              <!-- <div class="dropdown-divider"></div> -->
+                              <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsWind.html">Wind Speed</a>
+                            </div>
+                    
+            <!-- <button type="button" class="btn btn-light">Plots</button> -->
+            <button type="button" class="btn btn-light" onclick="window.location='./Hw11Comparison.html'">Comparison</button>
+            <!-- <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                Comparison
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11.html#/comparevisuals">Compare Visuals</a>
+            </div>   -->
+            <button type="button" class="btn btn-light" onclick="window.location='./Hw11Data.html'">Data</button>
+        <!-- <button class="btn" style="text-align:inherit" onclick="window.location='./Learn/'">&laquo; About HerdMASTER 4</button> -->
+    <!-- </button> -->
+    </div>  
+<!-- </label> -->
+<!-- </div> -->
+       
+    </nav>
+    <!-- Example split danger button -->
+   
+    <!-- 2. Mid-Left Section of Landing Page -->
+    <!-- <div class="container">
+            <div class="jumbotron">
+              <h1 class="display-16">Summary: Latitude vs. X</h1>
+              <p class="lead">This is placed inside a container</p>
+              <hr class="my-4">
+              <p>Here we can display some more text!</p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+    </div> -->
+<body>
+    <!-- <div class ="container"> -->
+    <section id="bodyspace">
+    <div class="card-deck">
+        <!-- <div class="card"> -->
+        <div class="card mb-3" style="max-width: 900px">
+            <h5 class="card-title title_padding font_increase"><strong>Summary: Latitude vs. X</strong></h5>
+            <hr>
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <!-- <div class="col-lg-4 col-md-3 col-sm-6">     -->
+                <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img" alt="Landing Page">
+                <p> included: temperature, cloudiness, wind speed, data and visualizations created as part of the descriptions of any trends and correlations </p>   
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Summary: Latitude vs. X</h5> -->
+                  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                      <br> <br>
+                     After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at and humidity. This site provides the source analysis, as well as explanations and witnessed.</p>
+                      
+                </div>
+                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              </div>
+            </div>
+        <!-- </div> -->
+        </div>
+    
+        <!-- <div class="card"> -->
+        <div class="card mb-3" style="max-width: 500px">
+            <h5 class="card-title title_padding">Visualizations</h5>
+            <hr>
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <!-- <div class="col-lg-4 col-md-3 col-sm-6">     -->
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11Plots.html" class="card-link"> <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img" alt="MaxTemp"> </a>
+                    <!-- <a class="card-link"> <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img" alt="Landing Page"> </a> -->
+                  <!-- <a> <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img card-link" alt="Landing Page"> </a> -->
+                <!-- <img src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" class="card-img" alt="Landing Page"> -->
+                <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsCloud.html" class="card-link"> <img src="02-Homeworks_11-Web_Resources_assets_images_Fig3.png" class="card-img" alt="Cloud"> </a>
+                <!-- <img src="02-Homeworks_11-Web_Resources_assets_images_Fig3.png" class="card-img" alt="2nd image"> -->
+                
+                   
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsHumid.html" class="card-link"><img src="02-Homeworks_11-Web_Resources_assets_images_Fig2.png" class="card-img" alt="Humid"> </a>
+                                                <!-- <img src="02-Homeworks_11-Web_Resources_assets_images_Fig2.png" class="card-img" alt="Humidity"> -->
+                    <a href="file:///Users/JBagga/workspace/COLNYC201901DATA3/02-Homeworks/11-Web/Hw11PlotsWind.html" class="card-link"><img src="02-Homeworks_11-Web_Resources_assets_images_Fig4.png" class="card-img" alt="Wind"> </a>
+                                                <!-- <img src="02-Homeworks_11-Web_Resources_assets_images_Fig4.png" class="card-img" alt="Wind Speed">  -->
+                </div>
+                    
+              </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    </section>
+</body>
+    <!-- </div> -->
+    <!-- <span class="border-bottom"></span> -->
+    <div class="footer">
+        
+        <p>Coypright Coding Bootcamp 2017</p>
+    </div>
+
+    
+
+
+</html>
+
+
+<!-- <div class=“row justify-content-end”></div> -->
+
+<!-- 
+<!DOCTYPE html>
+ HW11 CSS Stylesheets with Relative Paths -->
+<!-- <html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+   This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <!-- <link rel="stylesheet" type="text/css" href="styling.css">
+</head> -->
+
+<!-- <body>
+    <div>
+    <h1 id="big-font" class="back-black">Latitude</h1>
+    <h2><strong>Summary: Latitude vs. X</strong></h2>
+    <h3>We put DULL in DULL</h3> 
+    <hr>
+    <img id="land-image" src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" alt="Landing Page Image">
+    
+    <section>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        <br> 
+        <br>
+        After assembling the dataset, we used Matplotlib to plot varios aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+        </p>
+    </section>
+    </div>    
+        
+    </body>
+</html> -->
+
+<!-- <body>
+
+    <header>
+    <h1>Latitude</h1>
+    </header>
+
+    <main class="container">
+    <section id="main-bio">
+        <section id="figure">
+        <h2 id="bio-name">LSummary: Latitude vs. X</h2>
+        <img id="land-image" src="02-Homeworks_11-Web_Resources_assets_images_Fig1.png" alt="Landing Page Image">
+        </section>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        <br> 
+        <br>
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+        </p>
+    </section>
+
+    <aside id="contact-info">
+        <h2>Visualizations</h2>
+        <hr>
+        <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        </ul>
+    </aside>
+    </main>
+
+</body>
+    <div>
+        <h1>Latitude</h1>
+        <h1>Plot</h1>
+        <h1>Comaprison</h1>
+        <h1>Data</h1>
+        <hr>
+        links and buttons go here...-->
+    <!-- </div>
+
+    <Section>
+        <h2> Summary: </h2>
+        
+        <article>
+
+        </article>
+        
+        <article>
+
+        </article>
+    </Section>
+    
+    <br>
+    
+    <div>
+
+
+    </div>
+
+<body>
+
+
+
+
+
+</body> -->
+
